@@ -8,6 +8,9 @@ Bundler.require(*Rails.groups)
 
 module CloudStorageV2
   class Application < Rails::Application
+
+    Paperclip::Attachment.default_options[:path] = ":rails_root/uploads/:class/:attachment/:id_partition/:filename"
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
