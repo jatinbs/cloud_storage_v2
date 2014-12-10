@@ -11,10 +11,9 @@
     </div>
   <% end %>
     <div class="form-cotrol">
-      <%= f.label :file %>
       <%= f.file_field :file %>
     </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Save File', class: 'btn btn-primary' %>
   </div>
 <% end %>
