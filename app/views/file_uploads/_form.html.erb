@@ -10,7 +10,10 @@
       </ul>
     </div>
   <% end %>
-
+    <div class="form-cotrol">
+      <%= f.label :file %>
+      <%= file_field_tag :file %>
+    </div>
   <div class="field">
     <%= f.label :title %><br>
     <%= f.text_field :title %>
