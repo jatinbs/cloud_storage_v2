@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'downloads/download_page'
+
   resources :file_uploads, only: [:new, :create, :show, :index, :destroy]
 
   devise_for :users
@@ -10,6 +12,9 @@ Rails.application.routes.draw do
   get 'static_pages/careers'
 
   get 'static_pages/terms_and_conditions'
+
+  get 'download/:file_hash' => 'downloads#download_page', as: 'download'
+  post 'download/:file_hash' => 'downloads#download_file'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
