@@ -13,5 +13,8 @@
  *= require_tree .
  *= require_self
  */
+$navbar-margin-bottom: 0;
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+/** variables **/
