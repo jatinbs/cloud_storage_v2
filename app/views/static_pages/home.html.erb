@@ -3,7 +3,16 @@
     <div class="row">
       <div class="col-sm-12">
         <h1>Welcome to Cloud Storage v2</h1>
-        <%= link_to 'Sign up!', new_user_registration_path, class: 'btn btn-primary' %>
+        <% if !user_signed_in? %>
+            <p>
+              <%= link_to 'Log in', new_user_session_path, class: 'btn btn-primary btn-lg' %>ß
+              <%= link_to 'Sign up', new_user_registration_path, class: 'btn btn-primary btn-lg' %>
+            </p>
+        <% else %>
+            <p>
+              <%= link_to 'Upload File', new_file_upload_path, class: 'btn btn-primary btn-lg' %>
+            </p>
+        <% end %>
       </div>
     </div>
   </div>
