@@ -46,3 +46,4 @@ gem 'autoprefixer-rails'
 #user module
 gem 'devise'
 gem "paperclip", "~> 4.2"
+gem 'uuid', '~> 2.3.7'
