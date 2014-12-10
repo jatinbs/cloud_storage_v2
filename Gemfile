@@ -45,3 +45,4 @@ gem 'autoprefixer-rails'
 
 #user module
 gem 'devise'
+gem "paperclip", "~> 4.2"
