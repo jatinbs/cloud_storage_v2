@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  resources :file_uploads
+
+  resources :file_uploads, only: [:new, :create, :show, :index, :destroy]
 
   devise_for :users
   root 'static_pages#home'
