@@ -22,8 +22,6 @@ class FileUploadsController < ApplicationController
   def create
     @file_upload = current_user.file_uploads.new(file_upload_params)
     @file_upload.save
-    render plain: @file_upload.file_hash
-    return
     respond_with(@file_upload)
   end
 
