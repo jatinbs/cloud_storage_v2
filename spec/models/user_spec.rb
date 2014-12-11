@@ -15,7 +15,7 @@ RSpec.describe User, :type => :model do
   it "should not allow duplicate emails" do
     expect do
       f = create(:user)
-    end.to raise_error(ActiveRecord::RecordInvalid, "Validation failed: Email has already been taken")
+    end.to raise_error(ActiveRecord::RecordInvalid)
   end
 
   it "should require email" do
