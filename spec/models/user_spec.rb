@@ -4,7 +4,7 @@ RSpec.describe User, :type => :model do
 
   before(:each) do
     @user = create(:user)
-    @user_attr = attributes_for(:user)
+    @user_attr = attributes_for(:user2)
   end
 
   it "should create a user with valid attributes" do
