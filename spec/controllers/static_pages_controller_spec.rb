@@ -22,7 +22,6 @@ RSpec.describe StaticPagesController, :type => :controller do
       get :about
       expect(response).to be_success
       expect(response).to have_http_status(200)
-      # expect(page).to have_selector('title')
     end
 
     it "renders template home" do
