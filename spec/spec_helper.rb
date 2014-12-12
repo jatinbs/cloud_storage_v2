@@ -28,7 +28,7 @@ RSpec.configure do |config|
   config.include Devise::TestHelpers, type: :controller
   config.include FactoryGirl::Syntax::Methods
   config.include ActionDispatch::TestProcess
-  config.extend ControllerMacros, :type => :controller
+  config.extend ControllerMacros
   config.expect_with :rspec do |expectations|
     # This option will default to `true` in RSpec 4. It makes the `description`
     # and `failure_message` of custom matchers include text for helper methods
