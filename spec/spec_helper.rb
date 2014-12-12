@@ -2,6 +2,7 @@ ENV["RAILS_ENV"] ||= 'test'
 require File.expand_path("../../config/environment",__FILE__)
 require 'rspec/rails'
 require 'capybara/rails'
+require 'capybara/rspec'
 require 'devise'
 require_relative 'support/controller_macros'
 include ActionDispatch::TestProcess
