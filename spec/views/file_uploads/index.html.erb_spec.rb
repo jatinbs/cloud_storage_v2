@@ -19,5 +19,4 @@ RSpec.describe "file_uploads/index", :type => :view do
   end
 
 
-
 end
